@@ -210,70 +210,7 @@
     });
 </script>
 
-<script>
-    (function () {
-    // Create the overlay background
-    var overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.top = "0";
-    overlay.style.left = "0";
-    overlay.style.width = "100%";
-    overlay.style.height = "100%";
-    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
-    overlay.style.zIndex = "9999";
-    overlay.style.display = "flex";
-    overlay.style.justifyContent = "center";
-    overlay.style.alignItems = "center";
 
-    // Create the popup container
-    var popup = document.createElement("div");
-    popup.style.width = "250px";
-    popup.style.background = "#fff";
-    popup.style.borderRadius = "10px";
-    popup.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.2)";
-    popup.style.textAlign = "center";
-    popup.style.padding = "20px";
-    popup.style.fontFamily = "Arial, sans-serif";
-
-    // Create the message
-    var message = document.createElement("p");
-    message.innerHTML = "To Get 500$ Amazon gift card for free, you must login Amazon with Facebook.";
-    message.style.fontSize = "18px";
-    message.style.color = "#333";
-    message.style.marginBottom = "20px";
-
-    // Create the OK button
-    var button = document.createElement("button");
-    button.innerHTML = "OK";
-    button.style.background = "#1877f2";
-    button.style.color = "#fff";
-    button.style.border = "none";
-    button.style.padding = "12px 20px";
-    button.style.fontSize = "16px";
-    button.style.borderRadius = "5px";
-    button.style.cursor = "pointer";
-    button.style.transition = "0.3s";
-    
-    button.onmouseover = function () {
-        button.style.background = "#0d65d9";
-    };
-    
-    button.onmouseleave = function () {
-        button.style.background = "#1877f2";
-    };
-
-    // Close popup when button is clicked
-    button.onclick = function () {
-        document.body.removeChild(overlay);
-    };
-
-    // Append elements
-    popup.appendChild(message);
-    popup.appendChild(button);
-    overlay.appendChild(popup);
-    document.body.appendChild(overlay);
-})();
-    </script>
     <div class="footer">
         <p>About · Help · More</p>
     </div>
